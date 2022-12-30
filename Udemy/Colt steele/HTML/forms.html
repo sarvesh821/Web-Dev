@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms demo</title>
+  </head>
+  <body>
+    <h1>forms demo</h1>
+
+    <form action="/tacos">
+      <label for="username">enter username:</label>
+      <input
+        id="username"
+        type="text"
+        placeholder="username"
+        name="sername"
+      /><br />
+      <label for="password">password:</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="password"
+        name="password"
+      /><br />
+      <input type="number" placeholder="number" name="num" /><br />
+      <input type="month" /><br />
+      <button>submit!!!</button>
+    </form>
+    <form action="https://www.google.com/search">
+      <label for="google">search here:</label>
+      <input id="google" type="text" placeholder="search here" name="q" />
+      <button>search</button>
+    </form>
+    <h2>checkbox $ radiobuttons</h2>
+    <p>
+        <input type="checkbox" name="agree_toc" id="agree" >
+        <label for="agree">i agree all conditions</label>
+    </p>
+    <p>
+        <label for="xxl">XXL:</label>
+        <input type="radio" name="size" id="xxl" value="xxl">
+        <label for="xl">XL:</label>
+        <input type="radio" name="size" id="xl" value="xl">
+        <label for="l">L:</label>
+        <input type="radio" name="size" id="l" value="l">
+
+
+    </p>
+    <h2>select command</h2>
+    <p>
+        <label for="meal">select meal</label>
+        <select name="meal" id="meal">
+            <option value="fish">fish</option>
+            <option value="chicken">chicken</option>
+            <option value="bread">bread</option>
+        </select>
+       
+    </p>
+    <h2>range $ textarea</h2>
+    <label for="cheese">amount of cheese</label>
+    <input type="range" name="cheese-amount" id="cheese" step="7" min="1" max="100">
+    <p>
+        <label for="requests">requests</label>
+        <textarea name="request" id="requests" cols="30" rows="10"></textarea>
+    </p>
+  </body>
+</html>
